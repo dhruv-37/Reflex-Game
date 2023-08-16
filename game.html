@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-level">
+        <h2>Reflex Game</h2>
+        <p id="level-title">Choose Difficulty Level</p>
+        <button id="lvlone">Easy</button>
+        <button id="lvltwo">Medium</button>
+        <button id="lvlthree">Hard</button>
+        <ul id="rules"><p>Rules</p>
+            <li class="rule">Easy: 30s | Medium: 15s (default) | Hard: 10s</li>
+            <li class="rule">You will be given a time duration according to the difficulty level chose by you.</li>
+            <li class="rule">You have to click on the circle targets appearing in the area below the scoreboard.</li>
+            <li class="rule">The more you hit, more points will be added in the highest score bar.</li>
+            <li class="rule">Keep playing, Have Fun!!</li>
+        </ul>
+        <p id="foot">Game By Dhruv Kumar - <a href="https://www.linkedin.com/in/dhruv-kumar-340a7b27b/" target="_blank">Social</a></p>
+    </div>
+    <p id="level-display">Medium</p>
+    <div class="container">
+        <div class="score-board">
+            <div class="score">
+                Score <span>0</span>
+            </div>
+            <div class="timer">
+                Timer <span>15</span>
+            </div>
+            <div class="max">
+                Highest Score <span>0</span>
+            </div>
+        </div>
+        <div class="play-area">
+            <button id="start">Start Game</button>
+        </div>
+    </div>
+    <div class="color-change">
+        <label for="bgColor">Change color of bg</label><input     type="color" id="bgColor" value="#f5deb3">
+        <label for="targetColor">Change color of target</label><input type="color" id="targetColor" value="#000000">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
